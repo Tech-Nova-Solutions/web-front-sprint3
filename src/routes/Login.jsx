@@ -11,7 +11,7 @@ const Login = () => {
   function validar(){
     for(let i=0;i<usuarios.length;i++){
       if(
-        usuarios[i].usuario == usuario.current.value &&
+        usuarios[i].email == email.current.value &&
         usuarios[i].senha == senha.current.value
       ){
         return true;
@@ -25,24 +25,31 @@ const Login = () => {
     if(validar()){
       let token =
         Math.random().toString(16).substring(2)+
-        Math.random().toString.substring(2)
-        sessionStorage.setItem("usuario", usuario.current.value);
+        Math.random().toString(16).substring(2)
+        sessionStorage.setItem("email", email.current.value);
         sessionStorage.setItem("senha", token);
         //CHAMAR PÁGINA LOGADA
         navigate('/')
     }else{
-      alert("usuario/senha inválidos")
+      alert("E-mail/senha inválidos")
     }
 
-    useEffect(()=>{
-      fetch("http://localhost")
+  }
 
+
+  useEffect(()=>{
+    fetch("http://localhost:5000/usuarios/")
+
+    .then((res)=>{
+      return res.json();
     })
 
+    .then((res)=>{
+      setUsuarios(res);
+    })
 
+},[])
 
-
-  }
   return (
     <section className='container-login'>
     <form className='login-form' onSubmit={handleSubmit}>
@@ -50,7 +57,7 @@ const Login = () => {
         <label htmlFor="email">E-mail</label>
         <input 
 
-          type="text"
+          type="email"
           id="email"
           ref = {email}
           placeholder='Digite seu E-mail'

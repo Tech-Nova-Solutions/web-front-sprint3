@@ -1,5 +1,9 @@
 {
-    "usuarios":[
-        
-    ]
+  "usuarios": [
+    {
+      "id": "daea",
+      "email": "giuliabarbizan@gmail.com",
+      "senha": "123"
+    }
+  ]
 }

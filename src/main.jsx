@@ -8,6 +8,7 @@ import Login from './routes/Login.jsx'
 import Ingressos from './routes/Ingressos.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Desafios from './routes/Desafios.jsx'
+import CadastrarUsuario from './routes/CadastrarUsuario.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,8 +19,9 @@ const router = createBrowserRouter([
       {path:'/', element:<Home/>},
       {path:'/login', element:<Login/>},
       {path:'/ingressos', element:<Ingressos/>},
-      {path:'/Sobre', element:<Sobre/>},
-      {path:'/Desafios',element:<Desafios/>},
+      {path:'/sobre', element:<Sobre/>},
+      {path:'/desafios',element:<Desafios/>},
+      {path:'/cadastro', element:<CadastrarUsuario/>}
     ]
   }
 
