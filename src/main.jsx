@@ -9,6 +9,8 @@ import Ingressos from './routes/Ingressos.jsx'
 import Sobre from './routes/Sobre.jsx'
 import Desafios from './routes/Desafios.jsx'
 import CadastrarUsuario from './routes/CadastrarUsuario.jsx'
+import GlobalStyle from './css/GlobalStyle.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <GlobalStyle/>
     <RouterProvider router = {router}/>
   </StrictMode>,
 )

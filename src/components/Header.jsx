@@ -1,19 +1,23 @@
 import { Link } from "react-router-dom"
+import { HeaderStyle } from "../css/HeaderStyle"
+import logo1 from '../assets/formula-e-logo-1.png'
 const Header = () => {
   return (
-   <header className='header'>
-  
-     <img src="" alt="logo formula e" />
-     <div className='redirecionamento-paginas'>
-        <Link to='/'>Home</Link>
-        <Link to='/ingressos'>Ingressos</Link>
-        <Link to='/sobre'>Sobre nós</Link>
-        <Link to='/desafios'>Desafios & Soluções</Link>
-     </div>
-     
+    <HeaderStyle>
+      <header className='header'>
+      
+        <img src={logo1} alt="logo formula e" className="logo1"/>
+        <div className='nav'>
+            <Link to='/' className="links">Home</Link>
+            <Link to='/ingressos' className="links">Ingressos</Link>
+            <Link to='/sobre' className="links">Sobre nós</Link>
+            <Link to='/desafios' className="links">Desafios & Soluções</Link>
+        </div>
+        
 
-     <Link to='/login'>Login</Link>
-   </header>
+        <Link to='/login' className="login">Login</Link>
+      </header>
+   </HeaderStyle>
   )
 }
 
