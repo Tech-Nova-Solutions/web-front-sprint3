@@ -81,9 +81,9 @@ export const HomeStyle = styled.section`
 
 .calendario-corridas{
     width:100%;
-    min-height:30vh;
+    min-height:50vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     gap:30px;
     flex-wrap: wrap;
