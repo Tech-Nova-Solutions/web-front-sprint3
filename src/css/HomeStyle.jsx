@@ -29,6 +29,7 @@ export const HomeStyle = styled.section`
     height:auto;  
     align-self: center;
     justify-self: center;
+    
 }
 .carro1{
     grid-area: carro;
@@ -47,6 +48,7 @@ export const HomeStyle = styled.section`
     justify-self: center;
     align-self:center;
     font-size:1.2rem;
+    max-width: 800px;
 }
 .btn-sabermais{
     grid-area: btn;
@@ -123,10 +125,14 @@ export const HomeStyle = styled.section`
     color:var(--bg-color);
     font-weight: 600;
 }
+.btn:hover{
+        background:var(--azul-escuro);
+    }
+
 
 .info-sust{
     width:100%;
-    min-height:50vh;
+    min-height:60vh;
     background-image: url(src/assets/foto-fundo.png);
     background-size: cover;
     background-position:center center;
@@ -156,6 +162,7 @@ export const HomeStyle = styled.section`
 
 .texto-sust{
     width: 80%;
+    max-width: 1000px;
     height:50%;
     align-self: center;
     justify-self: center;

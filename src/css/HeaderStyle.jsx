@@ -12,6 +12,7 @@ export const HeaderStyle = styled.header `
     .logo1{
         width:55px;
         height:50px;
+        
     }
     .nav{
         
@@ -26,7 +27,7 @@ export const HeaderStyle = styled.header `
         color: var(--azul-escuro);
         font-weight: 700 ;
         font-size:1.3rem;
-        border-bottom: 3px solid;
+        text-decoration: underline;
     }
     .links:hover{
         color:var(--azul-claro);
