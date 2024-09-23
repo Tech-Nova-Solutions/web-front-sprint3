@@ -1,5 +1,6 @@
 import {useRef, useState, useEffect} from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import { LoginStyle } from '../css/LoginStyle';
 
 const Login = () => {
   const email = useRef();
@@ -51,10 +52,11 @@ const Login = () => {
 },[])
 
   return (
+    <LoginStyle>
     <section className='container-login'>
     <form className='login-form' onSubmit={handleSubmit}>
       <div className='form-group'>
-        <label htmlFor="email">E-mail</label>
+        <label htmlFor="email">E-mail: </label>
         <input 
 
           type="email"
@@ -65,7 +67,7 @@ const Login = () => {
          />
       </div>
       <div className='form-group'>
-        <label htmlFor="senha">Senha</label>
+        <label htmlFor="senha">Senha: </label>
         <input 
 
           type="password"
@@ -93,6 +95,7 @@ const Login = () => {
     </form>
 
     </section>
+    </LoginStyle>
   )
 }
 
