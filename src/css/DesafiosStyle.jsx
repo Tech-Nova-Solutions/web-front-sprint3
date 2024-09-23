@@ -53,7 +53,7 @@ export const DesafiosStyle = styled.section `
         grid-area:texto;
         display: flex;
         flex-direction: column;
-        font-size: 1rem;
+        font-size: 1.2rem;
         justify-content: space-evenly;
         text-align: justify;
         color:var(--bg-color);
@@ -95,6 +95,7 @@ export const DesafiosStyle = styled.section `
         padding:50px;
         gap:20px;
         color:var(--bg-color);
+        font-size:1.2rem;
     }
     .btn{
         grid-area:btn;
