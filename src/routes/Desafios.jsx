@@ -33,10 +33,12 @@ const Desafios = () => {
               </p>
               
             </div>
-            <Link to='/sobre' className="btn">Conhecer nossa história</Link>
+            
             
 
             <img src="src/assets/redes-sociais.png" alt="redes" />
+
+            <Link to='/sobre' className="btn">Conhecer nossa história</Link>
         </section>
       
         

@@ -36,6 +36,7 @@ export const DesafiosStyle = styled.section `
         align-items: center;
         border-radius:50px;
         font-size: 2rem;
+        text-align: center;
         
     }
     .section-1{
@@ -64,7 +65,7 @@ export const DesafiosStyle = styled.section `
     .section-1 img{
         width:100%;
         height: auto;
-        padding: 80px;
+        
         align-self: center;
     }
 
@@ -114,6 +115,38 @@ export const DesafiosStyle = styled.section `
         text-decoration-thickness:2px;
         font-size:1.1rem;
         font-weight: 600;
+    }
+
+    @media (max-width:1110px){
+        .titulo{
+            font-size: 1.5rem;
+        }
+    }
+
+    //TABLET
+    @media (max-width: 840px){
+        .titulo{
+            font-size:1.2rem;
+        }
+    }
+
+    //MOBILE
+    @media (max-width:480px){
+        .titulo{
+            width:50%;
+        }
+        .section-1{
+            display:flex;
+            flex-direction: column;
+
+        }
+        .section-2{
+            display:flex;
+            flex-direction:column;
+            padding-bottom: 20px;
+
+        }
+        
     }
 
 `
