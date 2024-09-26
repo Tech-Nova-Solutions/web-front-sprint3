@@ -40,6 +40,7 @@ export const LoginStyle = styled.section `
     color:var(--bg-color);
     font-weight: 600;
     font-size:1.2rem;
+    
 
 }
 .login-form input{
@@ -52,22 +53,41 @@ export const LoginStyle = styled.section `
     
     
 }
+.form-group{
+    width:70%;
+    
+}
+
+.login-btn{
+    width:30%;
+    height: 10%;
+    background: var(--azul-claro);
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+
+   
+
+    
+}
 
 .login-form-btn{
-    width:130px;
-    height: 40px;
-    border-radius:20px;
-    background: var(--azul-claro);
+    width:100%;
+    background: transparent;
     border:none;
     color:var(--bg-color);
     text-transform: uppercase;
     font-size:1rem;
     font-weight: 600;
+     
 
 }
-.login-form-btn:hover{
+.login-btn:hover{
     background-color: var(--bg-color);
     color:var(--azul-claro);
+}
+.login-form-btn:hover{
+    color: var(--azul-claro);
 }
 
 .text2{
@@ -81,7 +101,33 @@ export const LoginStyle = styled.section `
 }
 
 
+//TABLET
+@media (max-width:840px){
+    .login-form{
+        width:45%;
+        min-height: 45%;
+        font-size: 0.9rem;
+        padding:20px;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        width:90%;
+    }
+    
+}
 
+//MOBILE
+@media (max-width:480px){
+    .login-form{
+        width:60%;
+        min-height: 45%;
+    }
+    .login-btn{
+        min-width: 65px;
+    }
+}
 
 
 `
