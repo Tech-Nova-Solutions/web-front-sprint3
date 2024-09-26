@@ -53,7 +53,7 @@ export const MenuStyle = styled.div `
 }
 
 .menu.open {
-  height: 200px;
+  height: 250px;
   
 }
 
@@ -74,6 +74,13 @@ export const MenuStyle = styled.div `
 }
 
 @media(max-width: 480px) {
+    .hamburger-menu-container{
+        display: block;
+    }
+    
+
+}
+@media(max-width: 840px) {
     .hamburger-menu-container{
         display: block;
     }

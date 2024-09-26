@@ -16,11 +16,11 @@ const Home = () => {
                 <img src={carro} alt="carro" className="carro1"/>
                 <p className="text">A Fórmula E é a principal categoria de automobilismo de carros elétricos, lançada em 2014. Promovendo a mobilidade sustentável e a inovação tecnológica, ela realiza corridas emocionantes em circuitos urbanos globais e serve como um laboratório para desenvolver tecnologias avançadas para veículos elétricos de produção em massa.</p>
                 <Link to='/sobre' className="btn-sabermais">Quero saber mais!</Link>
-                <div className="section-title">
-                    <h1>
+                
+                    <h1 className="section-title">
                     Futuras Corridas
                 </h1>
-                </div>
+                
             
             </div>
             <div className="calendario-corridas">

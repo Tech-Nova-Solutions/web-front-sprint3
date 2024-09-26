@@ -4,7 +4,7 @@ export const FooterStyle = styled.footer `
 
     .container{
         width:100%;
-        height:150px;
+        min-height:150px;
         background: var(--azul-claro);
         display:grid;
         grid-template-areas: 
@@ -23,6 +23,7 @@ export const FooterStyle = styled.footer `
         align-self: center;
     }
     .text{
+        
         display: flex;
         flex-direction: column;
         font-weight:500;
@@ -47,10 +48,19 @@ export const FooterStyle = styled.footer `
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            grid-template-areas: none;
+            grid-template-columns: none;
+            gap:20px;
+            padding:10px;
+        }
+        .logo{
+            width:50px;
+            height: 50px;
         }
         .text{
             display: flex;
             flex-direction: column;
+            font-size: 0.8rem;
         }
     }
 

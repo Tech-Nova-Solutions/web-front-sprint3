@@ -15,7 +15,7 @@ export const HomeStyle = styled.section`
     grid-template-areas: 
         "logo carro"
         "texto carro"
-        " btn     . "
+        " btn     title "
     ;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 0.5fr;
@@ -66,14 +66,19 @@ export const HomeStyle = styled.section`
     font-size: 1.1rem;
 }
 .section-title{
-    width:80%;
-    justify-self: flex-end;
+    grid-area:title;
+    width:100%;
+    height: 60px;  
     background:var(--bg-color);
-    position: relative;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
     display:flex;
     justify-content: center;
     align-items: center;
+    color: var(--azul-escuro);
+    font-size:1.8rem;
+    align-self: flex-end;
+    justify-self:flex-end;
+
 }
 .section-title h1{
     font-size: 2.5rem;
@@ -89,7 +94,7 @@ export const HomeStyle = styled.section`
     align-items: center;
     gap:30px;
     flex-wrap: wrap;
-    padding :40px 150px;
+    padding :40px;
 
 
 }
@@ -139,10 +144,9 @@ export const HomeStyle = styled.section`
     background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
-    position:relative;
-    justify-content:flex-start;
-    align-items:flex-start;
+   
     gap:90px;
+    
     
     
 }
@@ -178,14 +182,12 @@ export const HomeStyle = styled.section`
 .section-title2{
 
     background:var(--bg-color);
-    position: absolute;
-    bottom:0;
-    left:0;
+    margin-top: auto;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
-    width: 30%;
+    width: 60%;
     height:60px;
     display: flex;
-    padding-left:60px;
+    justify-content: center;
     align-items: center;
     color: var(--azul-escuro);
     font-size:1.8rem;
@@ -238,11 +240,13 @@ export const HomeStyle = styled.section`
 
 @media (max-width: 480px) {
     .banner-home{
+        width:100%;
         min-height:100vh ;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items:center;
+        gap: 50px;
         
     }
     .logo{
@@ -257,7 +261,18 @@ export const HomeStyle = styled.section`
     .text{
         font-size:1rem;
         align-self: center;
+        padding: 15px;
     }
+    .section-title{
+       margin-top: auto;
+       height:60px;
+       width:90%;
+    }
+    .btn{
+        text-align:center;
+    }
+    
+    
 
 
     

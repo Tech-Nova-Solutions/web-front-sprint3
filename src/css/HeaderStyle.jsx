@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const HeaderStyle = styled.header `
     .header{
         width: 100%;
-        height: 80px;
+        min-height: 80px;
         display:flex;
         justify-content: space-between;
         align-items: center;
@@ -67,6 +67,15 @@ export const HeaderStyle = styled.header `
             display: none;
         }
         
+    }
+
+    @media (max-width:840px){
+        .nav{
+            display: none;
+        }
+        .login{
+            display: none;
+        }
     }
 
 `

@@ -28,6 +28,7 @@ const MenuHamburguer = () => {
           <li><Link to='/ingressos'>Ingressos</Link></li>
           <li><Link to='/sobre'>Sobre Nós</Link></li>
           <li><Link to='/desafios'>Desafios e Soluções</Link></li>
+          <li><Link to='/login'>Login</Link></li>
         </ul>
       </nav>
     </div>
