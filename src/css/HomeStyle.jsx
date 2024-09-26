@@ -199,7 +199,7 @@ export const HomeStyle = styled.section`
 }
 .parceiros-1{
     display: flex;
-    height: 10vh;
+    min-height: 10vh;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--azul-escuro);
@@ -207,10 +207,13 @@ export const HomeStyle = styled.section`
 }
 .parceiros-2{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid var(--azul-escuro);
-    height: 10vh;
+    padding: 10px 20px;
+    gap:10px;
+   
     
 }
 
@@ -222,9 +225,10 @@ export const HomeStyle = styled.section`
 }
 .parceiros-3{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    height: 10vh;
+    align-items: center;   
+    padding:10px 20px;
 }
 .parceiros-3 img{
     width: 100%;
@@ -232,6 +236,33 @@ export const HomeStyle = styled.section`
     height: auto;
 }
 
+@media (max-width: 480px) {
+    .banner-home{
+        min-height:100vh ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    .logo{
+        width:80%;
+        height: auto;
+    }
+    .carro1{
+        width:80%;
+        height:auto;
+
+    }
+    .text{
+        font-size:1rem;
+        align-self: center;
+    }
+
+
+    
+    
+}
 
 
 

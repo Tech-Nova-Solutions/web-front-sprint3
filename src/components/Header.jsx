@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { HeaderStyle } from "../css/HeaderStyle"
 import logo1 from '../assets/formula-e-logo-1.png'
+import MenuHamburguer from "./MenuHamburguer"
 const Header = () => {
   return (
     <HeaderStyle>
@@ -13,10 +14,11 @@ const Header = () => {
             <Link to='/sobre' className="links">Sobre nós</Link>
             <Link to='/desafios' className="links">Desafios & Soluções</Link>
         </div>
-        
+        <MenuHamburguer/>
 
         <Link to='/login' className="login">Login</Link>
       </header>
+      
    </HeaderStyle>
   )
 }

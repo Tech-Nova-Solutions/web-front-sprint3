@@ -5,9 +5,10 @@ export const HeaderStyle = styled.header `
         width: 100%;
         height: 80px;
         display:flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         background: var(--bg-color);
+        padding: 0 20px;
     }
     .logo1{
         width:55px;
@@ -47,6 +48,25 @@ export const HeaderStyle = styled.header `
     .login:hover{
         background: var(--azul-claro);
 
+    }
+    @media(max-width:480px){
+        .header{
+            height:60px;
+            padding:0 10px;
+        }
+        .logo1{
+            width:35px;
+            height:35px;
+            
+        }
+        
+        .nav{
+            display: none;
+        }
+        .login{
+            display: none;
+        }
+        
     }
 
 `

@@ -83,6 +83,7 @@ export const IngressosStyle = styled.section`
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size:cover;
+        outline:0;
         
         
     }
@@ -93,6 +94,7 @@ export const IngressosStyle = styled.section`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        outline:0;
 
     }
     .text h2{

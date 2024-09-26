@@ -42,4 +42,16 @@ export const FooterStyle = styled.footer `
         color: var(--bg-color);
     }
 
+    @media (max-width:480px){
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 `
