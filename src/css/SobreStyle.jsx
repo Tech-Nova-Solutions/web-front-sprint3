@@ -61,18 +61,17 @@ export const SobreStyle = styled.section `
     }
     .section-title{
         grid-area:title;
-        width:60%;
-        height:50%;
-        justify-self: flex-end;
-        align-self: flex-end;
+        width:90%;
+        height: 60px;  
         background:var(--bg-color);
-        position: relative;
         clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
         display:flex;
         justify-content: center;
         align-items: center;
+        color: var(--azul-escuro);
         font-size:1.5rem;
-        color:var(--azul-escuro);
+        align-self: flex-end;
+        justify-self:flex-end;
         
     }
     .nossa-historia{
@@ -85,7 +84,7 @@ export const SobreStyle = styled.section `
             
         ;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 0.4fr;
+        grid-template-rows: 1fr auto;
         
         column-gap: 10px;
         background: var(--bg-color);
@@ -117,12 +116,12 @@ export const SobreStyle = styled.section `
     }
     .section-title2{
         grid-area:title;
-        width:60%;
-        height:50%;
+        width:90%;
+        height:60px;
         justify-self: flex-end;
         align-self: flex-end;
         background:var(--azul-escuro);
-        position: relative;
+        margin-top: auto;
         clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
         display:flex;
         justify-content: center;
@@ -170,6 +169,55 @@ export const SobreStyle = styled.section `
         text-align: center;
         border-radius:100px;
         align-self:center;
+    }
+    //TABLET
+    @media (max-width:840px){
+        .saudacao{
+            width: 70%;
+        }
+        .text{
+            padding-bottom:20px;
+        }
+    }
+
+    //MOBILE
+    @media (max-width:480px){
+        .banner-container{
+            min-height: 60vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:100px;
+        }
+        .saudacao{
+            margin-top: 20px;
+            align-self:flex-start;
+        }
+        .text{
+            padding:20px;
+        }
+        .nossa-historia{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:100px;
+        }
+        .container{
+            font-size:0.9rem;
+            gap: 20px;
+        }
+       .text1{
+        padding: 50px;
+        font-size:1rem;
+       }
+        .texto{
+            padding: 20px;
+            font-size:0.9rem;
+        }
+        .titulo{
+            width:80%;
+        }
     }
     
     
