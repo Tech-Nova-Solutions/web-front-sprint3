@@ -17,6 +17,10 @@ export const IngressosStyle = styled.section`
         min-height: 50vh;
         padding: 100px 120px;
         color: var(--bg-color);
+        display:flex;
+        align-items: center;
+       
+        
     }
     .banner-ingressos h1{
         font-size:2rem;
@@ -100,6 +104,7 @@ export const IngressosStyle = styled.section`
     .text h2{
         font-size: 1.5rem;
         color: var(--azul-escuro);
+        font-weight:900;
     }
     .text ul{
         display:flex;
@@ -110,6 +115,31 @@ export const IngressosStyle = styled.section`
     }
     .text span{
         font-weight: bolder;
+    }
+        //TABLET
+    @media (max-width:840px){
+        .datas{
+            padding:50px;
+        }
+        .text h2{
+            font-size:1.2rem;
+            
+        }
+    }
+    //MOBILE
+    @media (max-width: 480px){
+        .texto-banner{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .carro{
+            display:none;
+        }
+        .text{
+            width:100%;
+            
+        }
     }
 
 `

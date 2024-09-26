@@ -237,7 +237,7 @@ export const HomeStyle = styled.section`
     max-width:100px;
     height: auto;
 }
-
+/*MOBILE*/
 @media (max-width: 480px) {
     .banner-home{
         width:100%;
@@ -272,11 +272,12 @@ export const HomeStyle = styled.section`
         text-align:center;
     }
     
-    
-
-
-    
-    
+}
+/*TABLET*/
+@media (max-width:840px){
+    .calendario-corridas{
+        flex:1 1 calc(50% - 20px);
+    }
 }
 
 

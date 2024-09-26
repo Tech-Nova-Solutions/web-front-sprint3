@@ -5,9 +5,12 @@ const Ingressos = () => {
     <IngressosStyle>
     <section className="ingressos-container">
       <div className="banner-ingressos">
+        <div className="texto-banner">
         <h1>Ingressos</h1>
         <p>Garanta agora seus ingressos para assistir a Fórmula E ao vivo.</p>
         <p>Nos vemos na pista!</p>
+        </div>
+        
       </div>
       <div className="datas">
         <div className="cards-datas">
