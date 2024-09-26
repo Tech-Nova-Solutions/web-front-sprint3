@@ -1,5 +1,9 @@
 {
   "usuarios": [
-    
+    {
+      "id": "835f",
+      "email": "giuliabarbizan@gmail.com",
+      "senha": "123"
+    }
   ]
 }

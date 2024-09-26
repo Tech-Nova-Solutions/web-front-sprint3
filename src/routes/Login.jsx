@@ -11,9 +11,10 @@ const Login = () => {
 
   function validar(){
     for(let i=0;i<usuarios.length;i++){
+      const {email:userEmail, senha: userSenha} = usuarios[i]; //USANDO DESESTRUTURAÇÃO
       if(
-        usuarios[i].email == email.current.value &&
-        usuarios[i].senha == senha.current.value
+        userEmail == email.current.value &&
+        userSenha== senha.current.value
       ){
         return true;
       }
