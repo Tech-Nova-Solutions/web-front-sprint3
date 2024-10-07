@@ -1,4 +1,5 @@
 {
+  "homepage": "Tech-Nova-Solutions.github.io/web-front-sprint3",
   "name": "web-front-sprint3",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "backend": "json-server --watch dados.json --port 5000",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.2",
